@@ -27,6 +27,8 @@ class HouseInfo(BaseModel):
 
 
 # Loading model with default path models/model.pkl
+
+# Load model
 clf = joblib.load(
     os.environ.get('MODEL_PATH', "models/model.pkl")
 )
